@@ -1,0 +1,17 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+.navbar {
+	.container-fluid {
+		padding:0 175px;
+		.nav-item {
+			margin: 0 42px;
+		}
+	}
+}
+.btn-outline-primary {
+    color: White;
+    border-color: #9F70E0;
+}
