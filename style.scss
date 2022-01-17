@@ -1,17 +1,106 @@
+$primary: #9F70E0;
+$secondary: #262D40;
+.btn {
+	border-radius: 15px;
+	font-size: 18px;
+}
+.btn-outline-primary {
+    color: White;
+    border-color: $primary;
+    &:hover {
+    	background-color: $primary;
+		border-color: $primary;
+    }
+}
+.btn-primary {
+	background-color: $primary;
+	border-color: $primary;
+	&:hover {
+		border-color: $primary;
+		background-color: #343157;
+	}
+}
+.text-primary {
+	color: $primary!important;
+}
+.bg-primary {
+	background-color: $primary!important;
+}
+// ===================
 *{
 	padding: 0;
 	margin: 0;
 	font-family: 'Poppins', sans-serif;
 }
 .navbar {
+	background-color: $secondary;
 	.container-fluid {
-		padding:0 175px;
+		padding:0 176px;
 		.nav-item {
 			margin: 0 42px;
+			.nav-link {
+				font-size: 18px;
+    			font-weight: 500;
+    			&.active {
+    				color: $primary!important;
+    			}
+			}
 		}
 	}
 }
-.btn-outline-primary {
-    color: White;
-    border-color: #9F70E0;
+header{
+	height: calc(100vh - 89px);
+	background-color: $secondary;
+	padding: 0 176px;
+	.header-title-first {
+		font-size: 100px;
+		color: #343157;
+		font-weight: 900;
+	}
+	.header-title-2nd {
+		font-size: 48px;
+		font-weight: bold;
+	}
+	.button-row {
+		button {
+			margin-right: 53px;
+		}
+	}
+}
+.infor-me {
+	background-color: $secondary;
+	height: calc(100vh - 89px);
+	.block-infor-wrap {
+		width: 865px;
+		height: 360px;
+		.block-infor {
+			border-radius: 30px;
+			.description {
+				margin-left: 92px;
+				background: url("./img/Order.png") no-repeat;
+				.title-job {
+					font-weight: 500;
+					font-size: 20px;
+					margin: 57px 0 22px 0; 
+				}
+				.about-me-first {
+					font-size: 48px;
+					font-weight: 700;
+				}
+				p {
+					font-size: 16px;
+				}
+			}
+		}
+		.dot-right {
+			width: 57px;
+			height: 57px;
+		}
+		.dot-item {
+			width: 7.13px;
+			height: 7.13px;
+			border-radius: 100%;
+			background-color: white;
+		}
+	}
 }
