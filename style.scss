@@ -74,14 +74,20 @@ header{
 		width: 865px;
 		height: 360px;
 		.block-infor {
+			position: relative;
+			z-index: 2;
 			border-radius: 30px;
 			.description {
 				margin-left: 92px;
-				background: url("./img/Order.png") no-repeat;
 				.title-job {
 					font-weight: 500;
 					font-size: 20px;
-					margin: 57px 0 22px 0; 
+					margin-bottom: 22px;
+				}
+				.wrap-title-infor {
+					background: url("./img/Order.png") no-repeat;
+					padding-top: 30px;
+					margin-top: 25px;
 				}
 				.about-me-first {
 					font-size: 48px;
@@ -89,18 +95,46 @@ header{
 				}
 				p {
 					font-size: 16px;
+					font-weight: 200;				
 				}
 			}
 		}
+		.dot-left {
+			width: 280px;
+			bottom: -75px;
+			left: -93px;
+			z-index: 1;
+		}
 		.dot-right {
-			width: 57px;
-			height: 57px;
+			width: 80.13px;
+			height: 85.13px;
+			top: -30px;
+			right: -22px;
+			z-index: 1;
 		}
 		.dot-item {
 			width: 7.13px;
 			height: 7.13px;
 			border-radius: 100%;
 			background-color: white;
+			margin-right: 7.8px;
+			margin-bottom: 14.8px;
 		}
 	}
+	.circle-blur.violet {
+		position: absolute;
+		bottom: -194px;
+		right: 250px;
+		border-color: #9F70E0;
+	}
+}
+.circle-blur {
+	width: 334px;
+	height: 315px;
+	border: 44px solid black;
+	border-radius: 100%;
+}
+
+.portfolio {
+	min-height: 100vh;
 }
